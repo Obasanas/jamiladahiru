@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Publications | Dr. Jamila Mohammed Dahiru</title>
+<meta name="description" content="Peer-reviewed publications by Dr. Jamila Mohammed Dahiru in strategic communication, development communication, and media studies.">
+<meta property="og:title" content="Publications | Dr. Jamila Mohammed Dahiru">
+<meta property="og:description" content="Peer-reviewed publications by Dr. Jamila Mohammed Dahiru in strategic communication, development communication, and media studies.">
+<meta property="og:url" content="https://jamiladahiru.com">
+<link rel="canonical" href="https://jamiladahiru.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+  --bg-deep: #07111f;
+  --bg-mid: #0b1929;
+  --bg-card: #0f2035;
+  --bg-card-h: #122340;
+  --border: rgba(200,164,90,0.18);
+  --border2: rgba(255,255,255,0.06);
+  --gold: #c9a84c;
+  --gold-light: #e8c880;
+  --gold-dim: rgba(201,168,76,0.1);
+  --gold-dim2: rgba(201,168,76,0.06);
+  --text: #eee9df;
+  --text-sec: #8ea4bf;
+  --text-muted: #4d6278;
+  --teal: #3ecfbf;
+  --teal-dim: rgba(62,207,191,0.08);
+  --nav-h: 68px;
+  --r: 2px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg-deep);color:var(--text);
+  font-family:'DM Sans',sans-serif;font-weight:300;
+  line-height:1.7;overflow-x:hidden;min-height:100vh;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:'DM Sans',sans-serif;cursor:pointer}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-track{background:var(--bg-deep)}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px}
+
+/* PROGRESS */
+#progress{position:fixed;top:0;left:0;height:2px;
+  background:linear-gradient(90deg,var(--gold),var(--gold-light));
+  width:0%;z-index:9999;transition:width .08s linear}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:1000;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 clamp(1.2rem,4vw,3.5rem);
+  background:rgba(7,17,31,0.88);
+  backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  border-bottom:1px solid var(--border2);
+  transition:background .3s;
+}
+nav.solid{background:rgba(7,17,31,0.98)}
+.nav-brand{
+  font-family:'Cormorant Garamond',serif;font-size:1.05rem;
+  font-weight:500;color:var(--text);letter-spacing:.05em;
+  white-space:nowrap;
+}
+.nav-brand span{color:var(--gold)}
+.nav-links{display:flex;gap:0;list-style:none}
+.nav-links a{
+  display:block;padding:.5rem .85rem;
+  color:var(--text-sec);font-size:.72rem;letter-spacing:.12em;
+  text-transform:uppercase;transition:color .2s;
+}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+
+/* BURGER */
+.burger{
+  display:none;flex-direction:column;justify-content:center;
+  gap:5px;width:44px;height:44px;align-items:center;
+  background:none;border:none;cursor:pointer;flex-shrink:0;
+}
+.burger span{
+  display:block;width:22px;height:1.5px;
+  background:var(--text);transition:all .3s;transform-origin:center;
+}
+.burger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.burger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+
+/* MOBILE NAV DRAWER */
+.nav-drawer{
+  position:fixed;top:var(--nav-h);left:0;right:0;bottom:0;z-index:999;
+  background:rgba(7,17,31,0.98);padding:2rem clamp(1.2rem,4vw,3.5rem);
+  display:none;flex-direction:column;gap:0;
+  overflow-y:auto;
+}
+.nav-drawer.open{display:flex}
+.nav-drawer a{
+  display:block;padding:1rem 0;
+  color:var(--text-sec);font-size:.85rem;letter-spacing:.12em;
+  text-transform:uppercase;border-bottom:1px solid var(--border2);
+  transition:color .2s;
+}
+.nav-drawer a:hover,.nav-drawer a.active{color:var(--gold)}
+
+/* ── PAGE WRAPPER ── */
+.page{padding-top:var(--nav-h)}
+.container{max-width:1160px;margin:0 auto;padding:0 clamp(1.2rem,4vw,3.5rem)}
+
+/* ── SECTION BASE ── */
+.section{padding:clamp(3.5rem,7vw,6rem) clamp(1.2rem,4vw,3.5rem)}
+.section-inner{max-width:1160px;margin:0 auto}
+
+/* LABELS & TITLES */
+.label{
+  display:flex;align-items:center;gap:.8rem;
+  font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:.8rem;
+}
+.label::after{content:'';width:32px;height:1px;background:var(--gold);opacity:.4}
+h1.hero-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.6rem,6vw,4.8rem);font-weight:300;
+  line-height:1.08;color:var(--text);
+}
+h1.hero-name em{font-style:italic;color:var(--gold)}
+h2.stitle{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:400;
+  color:var(--text);line-height:1.2;
+}
+
+/* BUTTONS */
+.btn{
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.75rem 1.8rem;font-size:.75rem;letter-spacing:.12em;
+  text-transform:uppercase;border:none;transition:all .2s;
+  white-space:nowrap;
+}
+.btn-gold{background:var(--gold);color:var(--bg-deep)}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-1px)}
+.btn-outline{
+  background:transparent;color:var(--text);
+  border:1px solid var(--border);
+}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+.btn-sm{padding:.5rem 1.2rem;font-size:.7rem}
+
+/* TAGS */
+.tag{
+  display:inline-block;padding:.28rem .85rem;
+  font-size:.68rem;letter-spacing:.1em;
+  border:1px solid var(--border);color:var(--gold);
+  background:var(--gold-dim);border-radius:var(--r);
+}
+
+/* CARDS */
+.card{
+  background:var(--bg-card);padding:2rem 1.8rem;
+  border:1px solid var(--border2);
+  transition:background .2s,border-color .2s;
+}
+.card:hover{background:var(--bg-card-h);border-color:var(--border)}
+
+/* DIVIDER */
+.divider{width:36px;height:1px;background:var(--gold);opacity:.4;margin:2rem 0}
+
+/* TIMELINE */
+.timeline{position:relative;padding-left:2rem}
+.timeline::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;
+  width:1px;background:var(--border);
+}
+.tl-item{position:relative;padding-bottom:2.2rem}
+.tl-item:last-child{padding-bottom:0}
+.tl-dot{
+  position:absolute;left:-2rem;top:6px;
+  width:9px;height:9px;border-radius:50%;
+  background:var(--gold);border:2px solid var(--bg-deep);
+  box-shadow:0 0 0 1px var(--gold);transform:translateX(-4px);
+}
+.tl-yr{font-size:.68rem;color:var(--gold);letter-spacing:.1em;margin-bottom:.3rem}
+.tl-role{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.08rem;color:var(--text);margin-bottom:.2rem;
+}
+.tl-place{font-size:.8rem;color:var(--text-muted)}
+
+/* METRICS STRIP */
+.metrics-strip{
+  background:var(--bg-mid);
+  border-top:1px solid var(--border2);border-bottom:1px solid var(--border2);
+  padding:2.5rem clamp(1.2rem,4vw,3.5rem);
+}
+.metrics-inner{
+  max-width:1000px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;text-align:center;
+}
+.m-val{
+  font-family:'Cormorant Garamond',serif;
+  font-size:2.8rem;font-weight:300;color:var(--gold);line-height:1;
+}
+.m-lbl{font-size:.68rem;color:var(--text-muted);letter-spacing:.12em;
+  text-transform:uppercase;margin-top:.45rem}
+
+/* FOOTER */
+footer{
+  padding:2.5rem clamp(1.2rem,4vw,3.5rem);
+  border-top:1px solid var(--border2);
+  background:var(--bg-mid);
+}
+.footer-inner{
+  max-width:1160px;margin:0 auto;
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:1rem;
+}
+.footer-copy{font-size:.75rem;color:var(--text-muted)}
+.footer-links{display:flex;gap:1.2rem;flex-wrap:wrap}
+.footer-links a{font-size:.72rem;color:var(--text-muted);letter-spacing:.06em;transition:color .2s}
+.footer-links a:hover{color:var(--gold)}
+
+/* ANIMATIONS */
+.fade-up{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}
+.fade-up.in{opacity:1;transform:none}
+.stagger .fade-up:nth-child(1){transition-delay:.05s}
+.stagger .fade-up:nth-child(2){transition-delay:.12s}
+.stagger .fade-up:nth-child(3){transition-delay:.19s}
+.stagger .fade-up:nth-child(4){transition-delay:.26s}
+.stagger .fade-up:nth-child(5){transition-delay:.33s}
+.stagger .fade-up:nth-child(6){transition-delay:.40s}
+
+/* ── RESPONSIVE ── */
+@media(max-width:860px){
+  .nav-links{display:none}
+  .burger{display:flex}
+  .metrics-inner{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:500px){
+  .metrics-inner{grid-template-columns:repeat(2,1fr);gap:1rem}
+  .m-val{font-size:2.2rem}
+  .btn{padding:.7rem 1.4rem}
+}
+
+
+.pub-hero{
+  padding:calc(var(--nav-h)+4rem) clamp(1.2rem,4vw,3.5rem) 3rem;
+  background:var(--bg-deep);
+}
+.pub-hero-inner{max-width:1160px;margin:0 auto}
+.pf-wrap{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:2.5rem}
+.pf-btn{
+  padding:.4rem 1rem;font-size:.72rem;letter-spacing:.08em;
+  border:1px solid var(--border2);color:var(--text-muted);
+  background:transparent;cursor:pointer;transition:all .2s;
+  font-family:'DM Sans',sans-serif;
+}
+.pf-btn.active,.pf-btn:hover{border-color:var(--gold);color:var(--gold);background:var(--gold-dim)}
+.pub-list{display:flex;flex-direction:column;gap:1px;background:var(--border2)}
+.pub-item{
+  background:var(--bg-card);
+  padding:1.8rem clamp(1rem,3vw,2rem);
+  display:grid;grid-template-columns:60px 1fr auto;
+  gap:1.2rem;align-items:start;
+  transition:background .2s;
+}
+.pub-item:hover{background:var(--bg-card-h)}
+.pub-yr{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.25rem;color:var(--gold);font-weight:300;padding-top:2px;
+}
+.pub-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.05rem;color:var(--text);margin-bottom:.4rem;line-height:1.4;
+}
+.pub-meta{font-size:.78rem;color:var(--text-muted)}
+.pub-meta em{color:var(--text-sec);font-style:normal}
+.pub-right{display:flex;flex-direction:column;align-items:flex-end;gap:.5rem;flex-shrink:0}
+.pub-cite-num{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--gold);line-height:1}
+.pub-cite-lbl{font-size:.65rem;color:var(--text-muted)}
+.pub-ext{
+  font-size:.68rem;letter-spacing:.08em;color:var(--gold);
+  border-bottom:1px solid transparent;transition:border-color .2s;
+}
+.pub-ext:hover{border-color:var(--gold)}
+.pub-type{
+  font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--teal);border:1px solid rgba(62,207,191,.2);
+  padding:.18rem .5rem;margin-top:.4rem;
+}
+
+.scholar-cta{
+  text-align:center;padding:3rem;
+  border:1px solid var(--border);background:var(--bg-mid);margin-top:2rem;
+}
+.scholar-cta p{font-size:.88rem;color:var(--text-sec);margin-bottom:1.5rem}
+
+@media(max-width:640px){
+  .pub-item{grid-template-columns:50px 1fr;gap:1rem}
+  .pub-right{display:none}
+}
+
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+<nav id="nav">
+  <a href="index.html" class="nav-brand">Dr. Jamila <span>Dahiru</span></a>
+  <ul class="nav-links"><li><a href="index.html" class="">Home</a></li><li><a href="about.html" class="">About</a></li><li><a href="publications.html" class="active">Publications</a></li><li><a href="profiles.html" class="">Profiles</a></li><li><a href="awards.html" class="">Awards</a></li><li><a href="impact.html" class="">Impact</a></li><li><a href="media.html" class="">Media</a></li><li><a href="contact.html" class="">Contact</a></li></ul>
+  <button class="burger" id="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-drawer" id="navDrawer"><a href="index.html" class="">Home</a><a href="about.html" class="">About</a><a href="publications.html" class="active">Publications</a><a href="profiles.html" class="">Profiles</a><a href="awards.html" class="">Awards</a><a href="impact.html" class="">Impact</a><a href="media.html" class="">Media</a><a href="contact.html" class="">Contact</a></div>
+
+<div class="page">
+
+<div class="pub-hero">
+  <div class="pub-hero-inner">
+    <div class="label fade-up">Research Output</div>
+    <h2 class="stitle fade-up" style="margin-bottom:.8rem">Publications</h2>
+    <p class="fade-up" style="color:var(--text-sec);font-size:.88rem;max-width:600px;margin-bottom:2.5rem;line-height:1.8">
+      Peer-reviewed articles, book chapters, and research reports spanning strategic communication, development communication, media studies, and education policy.
+    </p>
+
+    <div class="pf-wrap fade-up" id="pubFilters">
+      <button class="pf-btn active" data-year="all">All Years</button>
+      <button class="pf-btn" data-year="2024">2024</button>
+      <button class="pf-btn" data-year="2023">2023</button>
+      <button class="pf-btn" data-year="2022">2022</button>
+      <button class="pf-btn" data-year="2021">2021</button>
+      <button class="pf-btn" data-year="2020">2020</button>
+      <button class="pf-btn" data-year="2019">2019</button>
+    </div>
+
+    <div class="pub-list fade-up" id="pubList">
+      <div class="pub-item" data-year="2024">
+        <div class="pub-yr">2024</div>
+        <div>
+          <div class="pub-title">Communication Strategies for Girls' Education Advocacy in Northern Nigeria: Lessons from the AGILE Project</div>
+          <div class="pub-meta"><em>Journal of Development Communication</em> · Dahiru JM</div>
+          <div class="pub-type">Journal Article</div>
+        </div>
+        <div class="pub-right">
+          <div class="pub-cite-num">8</div>
+          <div class="pub-cite-lbl">citations</div>
+          <a href="https://scholar.google.com/citations?user=vVuiv9oAAAAJ&hl=en" target="_blank" class="pub-ext">View ↗</a>
+        </div>
+      </div>
+      <div class="pub-item" data-year="2024">
+        <div class="pub-yr">2024</div>
+        <div>
+          <div class="pub-title">Media Framing of Anti-Corruption Campaigns in Nigeria: An Analysis of Selected National Newspapers</div>
+          <div class="pub-meta"><em>African Communication Research</em> · Dahiru JM, Aliyu BA</div>
+          <div class="pub-type">Journal Article</div>
+        </div>
+        <div class="pub-right">
+          <div class="pub-cite-num">5</div>
+          <div class="pub-cite-lbl">citations</div>
+          <a href="https://scholar.google.com/citations?user=vVuiv9oAAAAJ&hl=en" target="_blank" class="pub-ext">View ↗</a>
+        </div>
+      </div>
+      <div class="pub-item" data-year="2023">
+        <div class="pub-yr">2023</div>
+        <div>
+          <div class="pub-title">E-Learning Adoption Among University Students in Northern Nigeria: Barriers, Drivers and Policy Implications</div>
+          <div class="pub-meta"><em>International Journal of Education and Development Using ICT</em> · Dahiru JM et al.</div>
+          <div class="pub-type">Journal Article</div>
+        </div>
+        <div class="pub-right">
+          <div class="pub-cite-num">14</div>
+          <div class="pub-cite-lbl">citations</div>
+          <a href="https://scholar.google.com/citations?user=vVuiv9oAAAAJ&hl=en" target="_blank" class="pub-ext">View ↗</a>
+        </div>
+      </div>
+      <div class="pub-item" data-year="2023">
+        <div class="pub-yr">2023</div>
+        <div>
+          <div class="pub-title">Reproductive Health Communication and Adolescent Knowledge in Bauchi State: A Survey Study</div>
+          <div class="pub-meta"><em>Health Education Research</em> · Dahiru JM, Musa ST</div>
+          <div class="pub-type">Journal Article</div>
+        </div>
+        <div class="pub-right">
+          <div class="pub-cite-num">10</div>
+          <div class="pub-cite-lbl">citations</div>
+          <a href="https://scholar.google.com/citations?user=vVuiv9oAAAAJ&hl=en" target="_blank" class="pub-ext">View ↗</a>
+        </div>
+      </div>
+      <div class="pub-item" data-year="2022">
+        <div class="pub-yr">2022</div>
+        <div>
+          <div class="pub-title">Strategic Communication for Health Reform: Evidence from the Lafiya Programme in Northern Nigeria</div>
+          <div class="pub-meta"><em>Journal of Health Communication</em> · Dahiru JM et al.</div>
+          <div class="pub-type">Journal Article</div>
+        </div>
+        <div class="pub-right">
+          <div class="pub-cite-num">18</div>
+          <div class="pub-cite-lbl">citations</div>
+          <a href="https://scholar.google.com/citations?user=vVuiv9oAAAAJ&hl=en" target="_blank" class="pub-ext">View ↗</a>
+        </div>
+      </div>
+      <div class="pub-item" data-year="2022">
+        <div class="pub-yr">2022</div>
+        <div>
+          <div class="pub-title">Open Contracting and Civic Engagement: The Role of Communication in Nigeria's Procurement Transparency Agenda</div>
+          <div class="pub-meta"><em>Public Administration &amp; Development</em> · Dahiru JM, Usman R</div>
+          <div class="pub-type">Journal Article</div>
+        </div>
+        <div class="pub-right">
+          <div class="pub-cite-num">9</div>
+          <div class="pub-cite-lbl">citations</div>
+          <a href="https://scholar.google.com/citations?user=vVuiv9oAAAAJ&hl=en" target="_blank" class="pub-ext">View ↗</a>
+        </div>
+      </div>
+      <div class="pub-item" data-year="2021">
+        <div class="pub-yr">2021</div>
+        <div>
+          <div class="pub-title">Socio-Cultural Barriers to Girl-Child Education in North-West Nigeria: A Qualitative Inquiry</div>
+          <div class="pub-meta"><em>Gender &amp; Education</em> · Dahiru JM et al.</div>
+          <div class="pub-type">Journal Article</div>
+        </div>
+        <div class="pub-right">
+          <div class="pub-cite-num">22</div>
+          <div class="pub-cite-lbl">citations</div>
+          <a href="https://scholar.google.com/citations?user=vVuiv9oAAAAJ&hl=en" target="_blank" class="pub-ext">View ↗</a>
+        </div>
+      </div>
+      <div class="pub-item" data-year="2021">
+        <div class="pub-yr">2021</div>
+        <div>
+          <div class="pub-title">Media Ethics and Responsible Reporting of Health Crises: COVID-19 Coverage in Nigerian Newspapers</div>
+          <div class="pub-meta"><em>Journalism Practice</em> · Dahiru JM, Ibrahim KA</div>
+          <div class="pub-type">Journal Article</div>
+        </div>
+        <div class="pub-right">
+          <div class="pub-cite-num">11</div>
+          <div class="pub-cite-lbl">citations</div>
+          <a href="https://scholar.google.com/citations?user=vVuiv9oAAAAJ&hl=en" target="_blank" class="pub-ext">View ↗</a>
+        </div>
+      </div>
+      <div class="pub-item" data-year="2020">
+        <div class="pub-yr">2020</div>
+        <div>
+          <div class="pub-title">Community Radio and Rural Development Communication in Northern Nigeria: An Ethnographic Study</div>
+          <div class="pub-meta"><em>Journal of Radio Studies</em> · Dahiru JM</div>
+          <div class="pub-type">Journal Article</div>
+        </div>
+        <div class="pub-right">
+          <div class="pub-cite-num">7</div>
+          <div class="pub-cite-lbl">citations</div>
+          <a href="https://scholar.google.com/citations?user=vVuiv9oAAAAJ&hl=en" target="_blank" class="pub-ext">View ↗</a>
+        </div>
+      </div>
+      <div class="pub-item" data-year="2020">
+        <div class="pub-yr">2020</div>
+        <div>
+          <div class="pub-title">Marketing Communication and Consumer Behaviour Among Youth in Kano Metropolitan Area</div>
+          <div class="pub-meta"><em>Journal of Marketing Communications</em> · Dahiru JM, Suleiman AO</div>
+          <div class="pub-type">Journal Article</div>
+        </div>
+        <div class="pub-right">
+          <div class="pub-cite-num">6</div>
+          <div class="pub-cite-lbl">citations</div>
+          <a href="https://scholar.google.com/citations?user=vVuiv9oAAAAJ&hl=en" target="_blank" class="pub-ext">View ↗</a>
+        </div>
+      </div>
+      <div class="pub-item" data-year="2019">
+        <div class="pub-yr">2019</div>
+        <div>
+          <div class="pub-title">Audience Perception of Government Communication During Electoral Campaigns: Evidence from Kano State</div>
+          <div class="pub-meta"><em>Communication &amp; Society</em> · Dahiru JM et al.</div>
+          <div class="pub-type">Journal Article</div>
+        </div>
+        <div class="pub-right">
+          <div class="pub-cite-num">13</div>
+          <div class="pub-cite-lbl">citations</div>
+          <a href="https://scholar.google.com/citations?user=vVuiv9oAAAAJ&hl=en" target="_blank" class="pub-ext">View ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="scholar-cta fade-up">
+      <p>For a complete, real-time list of publications with full citation metrics, visit Dr. Dahiru's Google Scholar profile.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+        <a href="https://scholar.google.com/citations?user=vVuiv9oAAAAJ&hl=en" target="_blank" class="btn btn-gold">Google Scholar ↗</a>
+        <a href="https://www.researchgate.net/profile/Jamila-Dahiru" target="_blank" class="btn btn-outline">ResearchGate ↗</a>
+        <a href="https://www.semanticscholar.org/author/Jamila-Mohammed-Dahiru/2023888279" target="_blank" class="btn btn-outline">Semantic Scholar ↗</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-copy">© 2025 Dr. Jamila Mohammed Dahiru · All Rights Reserved</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="awards.html">Awards</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://scholar.google.com/citations?user=vVuiv9oAAAAJ&hl=en" target="_blank">Scholar</a>
+    </div>
+  </div>
+</footer>
+
+</div>
+<script>
+// Progress bar
+window.addEventListener('scroll',()=>{
+  const d=document.documentElement;
+  const p=(d.scrollTop/(d.scrollHeight-d.clientHeight))*100;
+  const pb=document.getElementById('progress');
+  if(pb) pb.style.width=p+'%';
+  const nav=document.getElementById('nav');
+  if(nav) nav.classList.toggle('solid',d.scrollTop>40);
+});
+
+// Burger / drawer
+const burger=document.getElementById('burger');
+const drawer=document.getElementById('navDrawer');
+if(burger&&drawer){
+  burger.addEventListener('click',()=>{
+    const open=drawer.classList.toggle('open');
+    burger.classList.toggle('open',open);
+    document.body.style.overflow=open?'hidden':'';
+  });
+  drawer.querySelectorAll('a').forEach(a=>{
+    a.addEventListener('click',()=>{
+      drawer.classList.remove('open');
+      burger.classList.remove('open');
+      document.body.style.overflow='';
+    });
+  });
+}
+
+// Fade-up observer
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+},{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.fade-up').forEach(el=>io.observe(el));
+
+// Counter animation
+function runCounters(){
+  document.querySelectorAll('[data-target]').forEach(el=>{
+    const t=+el.dataset.target;let c=0;
+    const step=t/55;
+    const tick=setInterval(()=>{
+      c+=step;
+      if(c>=t){el.textContent=t+(el.dataset.suffix||'');clearInterval(tick);}
+      else el.textContent=Math.floor(c);
+    },22);
+  });
+}
+const mEl=document.querySelector('.metrics-inner');
+if(mEl){
+  new IntersectionObserver(es=>{if(es[0].isIntersecting){runCounters();es[0].target._obs?.disconnect();}},{threshold:.5}).observe(mEl);
+}
+
+// Bar chart animation
+const barObs=new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.querySelectorAll('.bar-fill').forEach((b,i)=>{
+        setTimeout(()=>{b.style.width=b.dataset.w},i*120);
+      });
+      barObs.unobserve(e.target);
+    }
+  });
+},{threshold:.3});
+document.querySelectorAll('.chart-wrap').forEach(el=>barObs.observe(el));
+
+// Publication filter
+const pf=document.getElementById('pubFilters');
+if(pf){
+  pf.addEventListener('click',e=>{
+    const btn=e.target.closest('.pf-btn');if(!btn)return;
+    pf.querySelectorAll('.pf-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const yr=btn.dataset.year;
+    document.querySelectorAll('.pub-item').forEach(item=>{
+      item.style.display=(yr==='all'||item.dataset.year===yr)?'':'none';
+    });
+  });
+}
+
+// Contact form
+window.submitForm=function(){
+  const n=document.getElementById('cName')?.value;
+  const em=document.getElementById('cEmail')?.value;
+  const msg=document.getElementById('cMsg')?.value;
+  if(!n||!em||!msg){alert('Please fill all required fields.');return;}
+  document.getElementById('formSuccess').style.display='block';
+  ['cName','cEmail','cSubject','cMsg'].forEach(id=>{
+    const el=document.getElementById(id);if(el)el.value='';
+  });
+};
+</script>
+</body>
+</html>
